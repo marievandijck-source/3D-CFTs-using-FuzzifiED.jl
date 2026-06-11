@@ -22,7 +22,5 @@ More details on each calculation can be found in the associated subfolders.
 
 ## Dependencies
 
-- `JLD2.jl`, `Plots.jl`, `LaTeXStrings.jl`, `LinearAlgebra.jl`, 'ITensors.jl', 'ITensorMPS.jl'
-
+- `JLD2.jl`, `Plots.jl`, `LaTeXStrings.jl`, `LinearAlgebra.jl`, `ITensors.jl`, `ITensorMPS.jl`
 - [FuzzifiED.jl](https://github.com/FuzzifiED/FuzzifiED.jl)
-- `JLD2.jl`, `Plots.jl`, `LaTeXStrings.jl`, `LinearAlgebra.jl`
