@@ -8,7 +8,7 @@ $$\delta E_\sigma(R, h) = \frac{c}{R} \Delta_\sigma(R) + g_\varepsilon(h) \, f_{
 
 The OPE coefficient is then extracted as:
 
-$$f_{\sigma\varepsilon\sigma}(R) = \frac{\partial \, \delta E_\sigma(R)}{\partial \, g_\varepsilon(R)} \Bigg|_{g_\varepsilon(R)=0}$$
+$$f_{\sigma\varepsilon\sigma}(R) = \frac{\partial  \delta E_\sigma(R)}{\partial  g_\varepsilon(R)} \Bigg|_{g_\varepsilon(R)=0}$$
 
 Since $g_\varepsilon(h) = 0$ at the critical point $h = h_c$, the function $g_\varepsilon(h)$ is evaluated at small deviations from $h_c$ for different states and system sizes.
 
