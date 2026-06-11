@@ -1,5 +1,9 @@
 ## Code Overview
 
+> **Note:** `O3_ED.jl` is adapted from the FuzzifiED.jl example by Zheng Zhou et al.,  
+> available at: https://github.com/FuzzifiED/FuzzifiED.jl/blob/main/examples/o3_wf_spectrum.jl  
+> Associated paper: *FuzzifiED.jl: A Julia package for fuzzy sphere calculations*, [arXiv:2510.09755](https://arxiv.org/abs/2510.09755)
+
 ### `O3_ED.jl`
 Calculates the scaling dimensions of the O(3) Wilson-Fisher CFT using Exact Diagonalization (ED) on the fuzzy sphere.
 
