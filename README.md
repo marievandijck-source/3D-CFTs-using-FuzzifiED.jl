@@ -6,6 +6,9 @@ This repository contains the code used for the second part of my master's thesis
 
 The model under investigation is the **O(3) Wilson-Fisher CFT**, studied using the quantum rotor model on the fuzzy sphere. The numerical calculations were performed using [FuzzifiED.jl](https://github.com/FuzzifiED/FuzzifiED.jl).
 
+The approach follows the methods described in:
+> Zheng Zhou et al., *FuzzifiED: A Julia Package for Fuzzy Sphere Calculations*, [arXiv:2510.09755](https://arxiv.org/abs/2510.09755)
+
 Two main quantities were calculated:
 
 - **Scaling dimensions** of CFT operators, obtained via both Exact Diagonalization (ED) and the Density Matrix Renormalization Group (DMRG)
