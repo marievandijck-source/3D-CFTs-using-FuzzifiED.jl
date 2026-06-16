@@ -1,11 +1,11 @@
 using JLD2
 
 # ─────────────────────────────────────────────
-# Combine all per-state OPE result files into one .jld2 file.
+# Combine all OPE result files into one .jld2 file.
 # Set `result_dir` to the folder containing the individual output files.
 # ─────────────────────────────────────────────
 
-result_dir = "results/L2S1+"
+result_dir = "results"
 
 all_OPEs = []
 for f in filter(readdir(result_dir; join = true)) do f
