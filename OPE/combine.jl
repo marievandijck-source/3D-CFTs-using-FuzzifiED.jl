@@ -1,15 +1,21 @@
 using JLD2
 
-result_dir = "C:/Users/marie/OneDrive/Bureaublad/UGent/thesis/julia/OPE/results/L2S1+"
+# ─────────────────────────────────────────────
+# Combine all per-state OPE result files into one .jld2 file.
+# Set `result_dir` to the folder containing the individual output files.
+# ─────────────────────────────────────────────
+
+result_dir = "results/L2S1+"
 
 all_OPEs = []
-for f in filter(f -> endswith(f, ".jld2") && f != "combined_OPEs.jld2", readdir(result_dir, join=true))
-    local d = load(f)
-    append!(all_OPEs, d["OPEs"])
+for f in filter(readdir(result_dir; join = true)) do f
+        endswith(f, ".jld2") && basename(f) != "combined_OPEs.jld2"
+    end
+    append!(all_OPEs, load(f)["OPEs"])
 end
 
-println("Totaal aantal OPEs: ", length(all_OPEs))
+println("Total OPE entries: ", length(all_OPEs))
 
 outfile = joinpath(result_dir, "combined_OPEs.jld2")
 @save outfile all_OPEs
-println("Opgeslagen in: ", outfile)
+println("Saved to: ", outfile)
